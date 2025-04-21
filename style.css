@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+html , body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.navbar{
+   height: 80px;
+}
+.navbar-brand img{
+    width: 65px;
+}
+.nav-link{
+    color: black;
+    font-size: 18px;
+}
+.nav-link:hover{
+    color: #E30613;
+    font-weight: 600;
+}
+.active{
+    color: #E30613 !important;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.top{
+    background-color: #E30613;
+    padding-block: 150px;
+    text-align: center;
+    color: white;
+}
+.more-btn{
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+.more-btn:hover{
+    border: 2px solid white;
+    font-weight: 600;
+}
+.card{
+    background-color: #f1f1f1;
+    padding: 10px 10px 20px 10px;
+    margin-top: 40px;
+    border: 0;
+}
+.card img{
+    border-radius: 5px;
+}
+.card a{
+    background-color: #E30613;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-inline: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.card a:hover{
+    border: 2px solid #E30613;
+    color: #E30613;
+}
+.middle{
+    padding-block: 70px;
+    text-align: center;
+}
+.middle h2 , .bottom h2{   
+    text-transform: uppercase;
+}
+.bottom{
+    padding-block: 60px;
+    background-color: #f1f1f1;
+}
+.legends-profile{
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 5px;
+}
+.legends-profile img{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 200px;
+    min-width: 100%;
+    object-fit: cover;
+}
+.legends-profile h4{
+    padding: 10px 10px 0 10px;
+}
+.legends-profile p{
+    padding-inline: 10px;
+}
+.legends-profile h6{
+    font-style: italic;
+    padding: 0 10px 15px 10px;
+    font-weight: 600;
+    color: #E30613;
+}
+.footer{
+    background-color: #E30613;
+    padding: 30px 0 10px 0;
+    text-align: center;
+    color: white;
+}
+.footer p{
+    font-weight: 600;
+    font-size: 22px;
+}
+.navbar-toggler{
+    box-shadow: none !important;
+}
+
+
+/* Team page */
+.team-banner{
+    background-image: url(images/banner.png);
+    background-size: cover;
+    height: 80vh;
+    max-width: 100%;
+}
+.team-body{
+    padding-block: 70px;
+}
+.team-body h2{
+    text-transform: uppercase;
+}
+.position{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    text-transform: uppercase;
+    color: #E30613;
+}
+.team-card{
+    margin-top: 20px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+}
+.team-card h5{
+    font-weight: 600;
+    padding-top: 10px;
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Matches Page */
+.match-banner{
+    background-image: url(images/matches-banner.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+.match-box{
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border-top: 2px solid #E30613;
+    width: 100%;
+    margin-top: 30px;
+}
+.match-box .match-list-1{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.match-box .match-list-1 li span{
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.match-box small{
+    color: #E30613;
+    text-transform: uppercase;
+}
+.match-list-2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+}
+.vs{
+    font-size: 25px;
+    font-weight: bold;
+}
+.team-name{
+    font-weight: 600;
+    font-size: 22px;
+}
+.live{
+    font-weight: 600;
+    font-size: 22px;
+    color: #E30613;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 767px) {
+    .navbar{
+        height: auto;
+    }
+    .navbar-brand img{
+        width: 50px;
+    }
+    .middle{
+        padding-block: 40px;
+    }
+    .legends-profile img{
+        height: auto;
+    }
+    .footer p{
+        font-size: 16px;
+    }
+    .match-box{
+        padding: 10px;
+    }
+    .match-box .match-list-1 li span{
+        font-size: 18px;
+    }
+    .match-list-2{
+       gap: 10px;
+    }
+    .team-name{
+        font-size: 18px;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar{
+        height: auto;
+    }
+    .card a{
+        margin-inline: 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .footer p{
+        font-size: 16px;
+    }
+    .team-card h5{
+        font-size: 15px;
+    }
+}
